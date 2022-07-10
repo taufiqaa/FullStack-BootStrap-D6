@@ -442,6 +442,7 @@ form #upload_project_button{
     height: 100%;
     margin-left: auto;
     padding: 0 1vw;
+    padding-left: 0;
 }
 
 .top_section #main_content_picture #main_picture_detail{
