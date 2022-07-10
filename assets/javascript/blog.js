@@ -51,7 +51,7 @@ function addProject(event) {
 function timeDuration(startDate,endDate){
     let durationResult = startDate.getMonth() - endDate.getMonth() + 12 * (endDate.getFullYear() - startDate.getFullYear());
 
-    return Math.floor(durationResult);
+    return Math.floor(durationResult*-1);
 }
 
 function loadProjects() {
