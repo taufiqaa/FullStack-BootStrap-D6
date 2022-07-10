@@ -270,6 +270,7 @@ form #upload_project_button{
     padding: 5px;
     border-radius: 20px;
     cursor: pointer;
+    text-align: end;
 }
 /* Output Project */
 #second_section{
