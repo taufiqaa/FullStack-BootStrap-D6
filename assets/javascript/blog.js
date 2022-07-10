@@ -21,7 +21,6 @@ function addProject(event) {
         alert("End Date is required");
     }else if(!description){
         alert("Description is required");
-        return
     }
        
         imageFile = URL.createObjectURL(imageFile.files[0])
