@@ -42,7 +42,8 @@ function addProject(event) {
         duration,
     };
 
-    console.log(projects)
+    
+
     projects.push(project)
     loadProjects()
 }
