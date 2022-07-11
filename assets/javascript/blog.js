@@ -102,6 +102,6 @@ function loadProjects() {
     function timeDuration(startDate,endDate){
         let durationResult = endDate.getMonth() - startDate.getMonth() + (endDate.getFullYear() - startDate.getFullYear()) * 12;
     
-        console.log(durationResult);
+        
         return Math.abs(durationResult);
     }
