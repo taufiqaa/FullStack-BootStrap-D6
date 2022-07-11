@@ -48,11 +48,6 @@ function addProject(event) {
     loadProjects()
 }
 
-function timeDuration(startDate,endDate){
-    let durationResult = startDate.getMonth() - endDate.getMonth() + 12 * (endDate.getFullYear() - startDate.getFullYear());
-
-    return Math.floor(durationResult*-1);
-}
 
 function loadProjects() {
     let containerProjects = document.getElementById("big_content")
@@ -102,4 +97,11 @@ function loadProjects() {
         </div>
     </div>`;
         }
+    }
+
+    function timeDuration(startDate,endDate){
+        let durationResult = endDate.getMonth() - startDate.getMonth() + (endDate.getFullYear() - startDate.getFullYear()) * 12;
+    
+        console.log(durationResult);
+        return Math.abs(durationResult);
     }
