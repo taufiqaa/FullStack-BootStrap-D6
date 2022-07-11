@@ -8,7 +8,7 @@ function getData(){
 
     let email_receiver = "example-mail@gmail.com"  
     let a = document.createElement('a');
-    console.log(a);
+    
     a.href = `mailto:${email_receiver}?subject=${subject}&body=Hello, I am ${name}, I would like to invite you for ${subject}, ${message}, for further information you can call me at ${phone}.`
 
     if(!name && !email && !phone && !message){
