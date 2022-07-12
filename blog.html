@@ -4,84 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>My Project</title>   
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-<section id="first_section">
-    <nav>
-        <div class="left_side">
-            <a href="index.html">
-                <img src="assets/images/dumbways_icon.png" alt="">
-            </a>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="blog.html">My Project</a>
-                </li>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid me-5 ms-5">
+          <img src="assets/images/dumbways_icon.png" class="navbar-brand" href="#"></img>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active ms-5 me-5" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-2 w-100" href="#">Add My Project</a>
+              </li>
+          </div>
+          <div class="ms-auto p-2">
+              <button class="contact-btn" type="submit">Contact</button>
+          </div>
         </div>
-        <div class="right_side">
-            <a href="contact.html">Contact</a>                
-        </div>
-    </nav>
-
+      </nav>
+<section class="project-section mt-5">
     <form onsubmit="addProject(event)">
-        <h1>Add My Project</h1>
-    <div>
-        <label for="project_name">Project Name</label>
-        <input type="text" name="" id="project_name">
-    </div>
-    <div class="container_date">
-        <div class="left_date">
-            <label for="start_date">Start Date</label>
-            <input type="date" name="" id="start_date">
+        <h1 style="text-align: center; color: navy;">Add My Project</h1>
+        <div class="mb-3">
+          <label for="project_name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="project_name" aria-describedby="emailHelp">
         </div>
-        <div class="right_date">
-            <label for="end_date">End Date</label>
-            <input type="date" name="" id="end_date">
-        </div>
-    </div>
-    <div>
-        <label for="description">Description</label>
-        <textarea name="" id="description" cols="30" rows="10"></textarea>
-    </div>
-    <div class="container_technologies">
-        <div id="left_technologies">
-            <div class="language_checkbox">
-                <input type="checkbox" class="language_field" value="language_1" id="language_1" >
-            <label for="language_1">Node Js</label>
-            </div>
-            <div class="language_checkbox">
-                <input type="checkbox" class="language_field" value="language_2" id="language_2">
-            <label for="language_2">React Js</label>
+        <div class="container_date">
+            <div class="left_date">
+                <div class="mb-3">
+                    <label for="start_date" class="form-label">Start Date</label>
+                    <input type="date" class="form-control" id="start_date" aria-describedby="emailHelp">
+                </div>
+            </div>        
+            <div class="right_date">
+                <div class="mb-3">
+                    <label for="end_date" class="form-label">End Date</label>
+                    <input type="date" class="form-control" id="end_date" aria-describedby="emailHelp">
+                </div>
             </div>
         </div>
-        <div id="right_technologies">
-            <div class="language_checkbox">
-                <input type="checkbox" class="language_field" value="language_3" id="language_3">
-                <label for="language_3">Vue Js</label>
-            </div>
-            <div class="language_checkbox">
-                <input type="checkbox" class="language_field" value="language_4" id="language_4" >
-                <label for="language_4">Angular</label>
-            </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a message here" id="description" style="height: 100px; resize: none;" ></textarea>
+              </div>
         </div>
+    <div class="mb-3">
+        <label for="technologies" class="form-label">Technologies</label>
+        <div class="container_technologies" id="technologies">
+            <div id="left_technologies">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="node_js">
+                    <label class="form-check-label" for="node_js">Node Js</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="react_js">
+                    <label class="form-check-label" for="react_js">React Js</label>
+                </div>
+            </div>
+                <div id="right_technologies">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="vue_js">
+                            <label class="form-check-label" for="vue_js">Vue Js</label>    
+                    </div>        
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="angular">
+                        <label class="form-check-label" for="angular">Angular</label>    
+                    </div>
+            </div>
+</div>
+    <div class="mb-3">
+        <label for="upload_image_button" class="form-label">Upload Image</label>
+        <input type="file" class="form-control" id="upload_image_button" aria-describedby="emailHelp">
     </div>    
-    <div>
-        <label for="upload_image_button">Upload Image</label>
-        <input type="file" id="upload_image_button" hidden> 
-    </div>
     <div class="upload_project">
         <button type="submit" id="upload_project_button">Post Project</button>
     </div>
     </form>
 </section>
-<section id="second_section">
-    <h1>My Project</h1>
+<!--<section id="project-second-section">
    <div class="big_content" id="big_content">
+   <div class="card mt-5 ms-4" style="width: 18rem;">
+      <img src="assets/images/main_picture.jpg" class="card-img-top" alt="...">
+    <div class="card-body pb-0">
+        <h5><a href="blog-detail.html"> Aplikasi-DumbWays</a></h5>
+    </div>
+    <h6>Duration : 3 month(s)</h6>
+        <div class="card-body mt-1">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>      
+        </div>
+        <div class="card-body">
+               <div class="flex_language_icon">
+                    <div class="language_icon">
+                        <img src="assets/images/node_js.png" alt="">
+                        <i class="fa-brands fa-node-js fa-2x"></i>
+                  </div>
+                    <div class="language_icon">
+                        <img src="assets/images/react_js.png" alt="">
+                        <!--<i class="fa-brands fa-react fa-2x"></i>
+                    </div>
+                    <div class="language_icon">
+                        <img src="assets/images/vue_js.png" alt="">
+                        <!--<i class="fa-brands fa-vuejs fa-2x"></i>
+                    </div>
+                    <div class="language_icon">
+                        <img src="assets/images/angular_js.png" alt="">
+                        <!--<i class="fa-brands fa-angular fa-2x"></i>
+                    </div>
+                </div>
+          </div>        
+        <div class="card-body">
+            <button type="submit" id="edit_content_button">Edit</button>
+            <button type="submit" id="delete_content_button">Delete</button>
+        </div>
+      </div>
+    </div>-->
+
   <!---<div class="box" id="box_project">
             <div class="image_content">
                 <img src="assets/images/HRV_black.png" alt="" id="image_project1">
@@ -120,11 +167,12 @@
                 </div>
             </div>
         </div>---->
-    </div> 
+   
+    
 </section>
 
 
-<script src="assets/javascript/blog.js"></script>
+<!--<script src="assets/javascript/blog.js"></script>-->
 
 </body>
 </html>

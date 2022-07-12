@@ -1,218 +1,76 @@
-/*index.html*/
-body{
-    font-family: Arial;
-    margin: 0;
-}
-
-#first_section{
-    background-color: azure;
-}
-
-nav{
-    display: flex;
-    height: 8vh;
-    background-color: wheat;
-}
-
-nav div{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-
-nav .left_side{
-    flex: 50%;
+.mt-0 {
+    margin-top: 120px !important;
+  }
+  
+.contact-btn{
     background-color: navy;
-    padding-left: 40px;
-}
-
-nav .left_side ul li{
-    display: inline;
-    margin-right: 100px;
-}
-
-nav .left_side ul li a{
-    text-decoration: none;
     color: white;
-    font-weight: bolder;
-    cursor: pointer;
-}
-
-nav .right_side{
-    flex: 50%;
-    background-color:navy;
-    justify-content: flex-end;
-    padding-right: 80px;
-}
-
-nav .right_side a{
-    text-decoration: none;
-    padding: 8px 20px;
-    color: white;
-    font-weight: bolder;
-    cursor: pointer;
-    background-color: cornflowerblue;
-    border-radius: 12px;
-}
-
-.container{
-    display: flex;
-    flex-wrap:nowrap;
-}
-
-.container .left_container,
-.right_container{
-    margin: 40px;
-}
-
-.container .left_container{
-    margin-left: 50px;
-    margin-top: 150px;
-}
-
-.container .sub_container{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.container .contact_container{
-    margin: 10px;
-}
-
-.left_container .contact_container{
-    margin-top: 14px;
-    margin-right: 15px;
-}
-
-.container .left_container .contact{
-    width: 80px;
+    border-radius: 15px;
     height: 30px;
-    border-radius: 12px;
-    background-color: navy;
-    cursor: pointer;
+    width: 100px;
+    margin-right: 20px;
 }
 
-.container .left_container .contact a{
-    color: white;
-    text-decoration: none;
-}
-
-.container .left_container h5,
-.fa-download{
+.download_container h5{
     color: navy;
-    cursor: pointer;
 }
 
-.container .left_container .icon_button{
-    width: 40px;
-    height: 40px;
+.icon_button{
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: navy;
     margin: 25px 8px;
     cursor: pointer;
 }
 
-.container .left_container .fa-brands{
+.fa-brands{
     color: white;
 }
 
-.container .left_container p{
-    text-align: justify;
-}
-
-.container .right_container{
-    margin-right: 50px;
-    margin-top: 50px;
-}
-
-.container .right_container #default_picture{
-    height: 500px;
-    width: 450px;
+#default_picture{
+    height: 400px;
+    width: 400px;
     border-radius: 15px 15px 0 0;
 }
 
-.container .right_container .identity{
+.identity{
     padding: 20px;
     box-shadow: 0 0 5px black;
     height: 100px;
-    width: 450px;
+    width: 400px;
 }
 
-.container .right_container .identity h3{
-    color: navy;   
-}
-
-.container .right_container .identity h3,h4{
-    text-align: center; 
-}
-
-/*-----------contact.html---------------*/
-
-form{
-    width: 450px;
+.contact-section{
     margin: auto;
-    margin-top: 50px;
+    width: 40%;
 }
 
-form h1{
-    text-align: center;
+.contact-section #full_name, #email, #phone, #subject,
+#message{
+ color: black;
+ border-color: navy;
+}
+
+label{
     color: navy;
 }
-form div{
-    margin: 30px;
-}
 
-form div input, select, textarea{
-    width: 100%;
-    box-sizing: border-box;
-    color: navy;
-    border: 2px solid navy;
-}
-
-form div #full_name, #email,
-#phone{
-    height: 30px;
-    border-radius: 10px;
-    padding: 12px;
-}
-
-form div #subject{
-    height: 30px;
-    border-radius: 10px;
-}
-
-form div #message{
-    border-radius: 10px;
-    resize: none;
-    padding: 12px;
-}
-
-form label, option{
-    color: navy;
-    font-size: 16px;
-    font-weight: bolder;
-}
-
-form .submit{
+#submit_btn{
+    color: white;
+    background-color: navy;
+    border-radius: 15px;
     text-align: end;
 }
 
-form .submit #submit_button{
-    color: white;
-    background-color: navy;
-    width: 100px;
-    height: 40px;
-    padding: 5px;
-    border-radius: 20px;
-    cursor: pointer;
+.contact_submit_button{
+    text-align: end;
 }
 
-/*------------Blog.html---------*/
-/*Add My Project*/
-form div #project_name{
-    height: 30px;
-    border-radius: 10px;
-    padding: 10px;
+/* Blog.html*/
+.project-section{
+    margin: auto;
+    width: 40%;
 }
 
 .container_date{
@@ -221,12 +79,12 @@ form div #project_name{
 
 .container_date .left_date{
     width: 50%;
-    margin: 5px;
+    margin-right: 5%;
 }
 
 .container_date .right_date{
     width: 50%;
-    margin: 5px;
+    margin-left: 5%;
 }
 
 .container_date #start_date, #end_date{
@@ -234,395 +92,89 @@ form div #project_name{
     border-radius: 10px;
 }
 
-form #description{
-    height: 80px;
-    resize: none;
-    border-radius: 10px;
-    padding: 10px;
-}
-
 .container_technologies{
     display: flex;
+    margin-bottom: 10px;
 }
 
-.container_technologies #left_technologies,
-#right_technologies{
-    margin: auto;
-}
-
-.language_checkbox{
-    margin-bottom: 1px;
+#left_technologies{
+    margin-right: 100px;
 }
 
 .upload_project{
     text-align: end;
 }
 
-form #upload_image_button{
-    background-color: white;
-    box-shadow: 2px 3px 0 0 black;
-    display: inline-block;
-    border-radius: 10px;
-    height: 24px;
-}
-
-form #upload_project_button{
+#upload_project_button{
     color: white;
     background-color: navy;
-    width: 100px;
-    height: 40px;
-    padding: 5px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-/* Output Project */
-#second_section{
-    height: 100%;
-    padding-bottom: 100px;
+    border-radius: 15px;
 }
 
-#second_section h1{
-    text-align: center;
-}
-
-#second_section .big_content{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-#second_section .big_content .box{
-    margin-top: 2.3%;
-    display: flex;
-    flex-wrap: wrap;
-    border: 2px solid black;
-    width: 22vw;
+#project-second-section{
     height: 600px;
-    padding: 40px;
-    margin-left: 3vw;
-    border-radius: 12px;
-    box-shadow: 2px 5px 0 0 black;
-    background-color: azure;
 }
 
-#second_section .big_content .box .image_content{
+.big_content{
+    margin: 0 10%;
     display: flex;
-    margin: 1.2vw;
-    width: 90%;
-    height: 200px;
-    border-radius: 12px;
-    border-radius: 12px;
+    flex-wrap: wrap;
+    height: 500px;
 }
 
-#second_section .big_content .box .image_content #image_project1{
-    width: 100%;
-    height: 200px;
-    border-radius: 12px;
+.card-body h5 a{
+    text-decoration: none;
+    color: black;
 }
 
-#second_section .big_content .box #output_project_name{
-    margin-top: 5px;
-    height: 30px;
-    width: 100%;
-    margin: 0 1.2vw;
+.card h6 {
+    text-decoration: none;
+    color: rgb(179, 173, 173);
+    font-size: 13px;
+    margin-left: 16px;
 }
 
-#second_section .big_content .box #output_project_name h3{ font-size: 1vw;
-    display: inline;
-    }
-
-#second_section .big_content .box #output_project_name h3 a{ font-size: 1vw;
-        display: inline;
-        text-decoration: none;
-        color: black;
-        cursor:pointer;
-        }    
-
-#second_section .big_content .box #duration{
-    margin-top: 2px;
-    height: 25px;
-    width: 100%;
-    margin: 0 1.2vw;
-}
-
-#second_section .big_content .box #duration h6{
-    display: inline;
-}
-
-#second_section .big_content .box #output_description{
-    margin-top: 20px;
-    height: 150px;
-    width: 100%;
-    text-align: justify;
-    margin: 0.8vw 1.2vw;
-}
-
-#second_section .big_content .box #output_description p{
-    display: inline;
-}
-
-#second_section .big_content .box .container_language_icon{
-    margin-top: 10px;
-    width: 100%;
-    height: 40px;
-    margin: 0.8vw 1.2vw;
-}
-        
-#second_section .big_content .box .container_language_icon .flex_language_icon{
+.card-body .flex_language_icon{
     display:flex;
     flex-direction: row;
-    width: 50%;
+    width: 100%;
     height: 100%;
 }
-        
-#second_section .big_content .box .container_language_icon .flex_language_icon .fa-node-js {
+/*.card-body .flex_language_icon .fa-node-js {
     display: inline;
     margin-right: 1vw;
 }
 
-#second_section .big_content .box .container_language_icon .flex_language_icon .fa-react {
+.card-body .flex_language_icon .fa-react {
     display: inline;
     margin-right: 1vw;
 }
 
-#second_section .big_content .box .container_language_icon .flex_language_icon .fa-vuejs {
+.card-body .flex_language_icon .fa-vuejs {
     display: inline;
     margin-right: 1vw;
 }
 
-#second_section .big_content .box .container_language_icon .flex_language_icon .fa-angular {
+.card-body .flex_language_icon .fa-angular {
     display: inline;
     margin-right: 1vw;
-}
+}*/
 
-#second_section .big_content .box .container_content_button{
-    margin-top: 5px;
-    width: 100%;
-    margin: 0.5vw 0.5vw;
-}
-
-#second_section .big_content .box .container_content_button .left_content_button{
-    display: inline;
-}
-
-#second_section .big_content .box .container_content_button .left_content_button #edit_content_button{
+.card-body #edit_content_button{
     width: 45%;
-    margin-left: 1px;
-    border-radius: 10vw;
+    display: inline;
+    box-sizing: border-box;
+    border-radius: 15px;
     color: white;
     background-color: navy;
-    cursor: pointer;
 }
 
-#second_section .big_content .box .container_content_button .right_content_button{
+.card-body #delete_content_button{
+    width: 45%;
     display: inline;
-}
-
-#second_section .big_content .box .container_content_button .right_content_button #delete_content_button{
-    width:45%;
-    border-radius: 10vw;
+    box-sizing: border-box;
+    border-radius: 15px;
     color: white;
     background-color: navy;
-    cursor: pointer;
 }
 
-/*blog-detail.html*/
-
-.detail_title h1{
-    text-align: center;
-}
-
-.top_section{
-    padding: 50px;
-    width: 80vw;
-    height: 450px;
-    display: flex;
-    margin: auto;
-}
-
-.top_section #main_content_picture{
-    width: 70%;
-    box-sizing: border-box;
-    height: 100%;
-    margin-left: auto;
-    padding: 0 1vw;
-    padding-left: 0;
-}
-
-.top_section #main_content_picture #main_picture_detail{
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.top_section #content_information{
-    width: 30%;
-    box-sizing: border-box;
-    height: 75%;
-}
-
-.top_section #content_information .duration_information #duration_title{
-    width: 100%;
-    height: 20%;
-    box-sizing: border-box;
-}
-
-.top_section #content_information .duration_information #duration_title h3{
-    display: inline;
-}
-
-.top_section #content_information .duration_information{
-    width: 100%;
-    height: 45%;
-    box-sizing: border-box;
-}
-
-.top_section #content_information .duration_information #date_information{
-    width: 100%;
-    height: 40%;
-    box-sizing: border-box;
-    display: flex;
-}
-
-.top_section #content_information .duration_information #date_information #date_icon{
-    width: 20%;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.top_section #content_information .duration_information #date_information #date_icon .calendar-days{
-    display: inline;
-}
-
-.top_section #content_information .duration_information #date_information #output_start_date{
-        width: 37.5%;
-        height: 100%;
-        box-sizing: border-box;
-    }
-
-.top_section #content_information .duration_information #date_information #output_start_date h4{
-    display: inline;
-    font-size: 1vw;
-}
-    
-.top_section #content_information .duration_information #date_information #range_icon{
-        width: 5%;
-        height: 100%;
-        box-sizing: border-box;
-        padding: 0 2vw;
-}
-
-.top_section #content_information .duration_information #date_information #range_icon h4{
-    display: inline;
-    font-size: 1vw;
-}
-
-.top_section #content_information .duration_information #date_information #output_end_date{
-        width: 37.5%;
-        height: 100%;
-        box-sizing: border-box;
-}
-
-.top_section #content_information .duration_information #date_information #output_end_date h4{
-    display: inline;
-    font-size: 1vw;
-}
-
-.top_section #content_information .duration_information #time_information{
-    width: 100%;
-    height: 40%;
-    box-sizing: border-box;
-    display: flex;
-}
-
-.top_section #content_information .duration_information #time_information #time_icon{
-    width: 20%;
-    height: 100%;
-    box-sizing: border-box;
-    display: flex;
-}
-
-.top_section #content_information .duration_information #time_information #time_icon .fa-hourglass{
-    display: inline;
-}
-
-.top_section #content_information .duration_information #time_information #output_duration {
-    width: 30%;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.top_section #content_information .duration_information #time_information #output_duration h4{
-    display: inline;
-    font-size: 1vw;
-}
-
-.top_section #content_information .technologies_information{
-    width: 100%;
-    height: 45%;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap
-}
-
-.top_section #content_information .technologies_information #language_title{
-    width: 100%;
-    height: 20%;
-    box-sizing: border-box;
-}
-
-.top_section #content_information .technologies_information #language_title h3{
-    display: inline;
-}
-
-.top_section #content_information .technologies_information #language_information{
-    width: 100%;
-    height: 80%;
-    box-sizing: border-box;
-    display:flex;
-}
-
-.top_section #content_information .technologies_information #language_information #output_language_detail{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.top_section #content_information .technologies_information #language_information #output_language_detail #node_output{
-    display: flex;
-    margin-right: 10%;
-}
-
-.top_section #content_information .technologies_information #language_information #output_language_detail #react_output{
-    display: flex;
-}
-
-.top_section #content_information .technologies_information #language_information #output_language_detail #vue_output{
-    display: flex;
-    margin-right: 10%;
-}
-
-.top_section #content_information .technologies_information #language_information #output_language_detail #typescript_output{
-    display: flex;
-}
-
-.bottom_section{
-    padding: 0 50px;
-    padding-bottom: 150px;
-    width: 80vw;
-    height: 500px;
-    display: flex;
-    margin: auto;
-}   
-
-.bottom_section #output_description_detail{
-    resize: none;
-    border: transparent;
-    border-radius: 1vw;
-    height: 100%;
-    padding: 1vw;
-}
-
-.bottom_section p{
-    font-size: 100%;
-    text-align: justify;
-}
